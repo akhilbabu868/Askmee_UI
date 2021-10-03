@@ -1,0 +1,29 @@
+status {
+    height: 11px;
+    width: 11px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 0 5px 0 0;
+}
+
+.delivered {
+    background-color: #25c525;
+}
+
+.cancelled {
+    background-color: #f20000;
+}
+
+.shipped {
+    background-color: #ff8800;
+}
+
+#rateing {
+    background-color: #ff8800;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+  }

@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="assets/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/searchbar.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/order.css" rel="stylesheet">
+    <link href="assets/css/cart.css" rel="stylesheet">
+    <link href="assets/css/navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+
+    <title>askmee.in</title>
+
+
+
+
+
+</head>
+
+<body class="bg-grey">
+<style>
+    .ibox-content .list-group-item{
+        padding-right: 0 ;
+        padding-left: 0 ;
+    }
+    .rating-btn{
+        font-size: 12px;
+        width: 146px;
+        padding: 5px 10px im !important
+    }
+
+</style>
+    <!-- </div> -->
+    <!-- .end of site-branding, search -->
+
+    <div class="container-fluid">
+      <header id="masthead" class="site-header site-header-background " role="banner">
+            <!-- start of mini header -->
+            <!-- .end of contacts mini header -->
+            <!--start of site branding search-->
+            <div class="container-fluid bg-white">
+                <div class="row">
+
+                    <div class="col-md-4 logo-container">
+
+                        <a href="/" class="custom-logo-link" rel="home">
+                            <img src="assets/img/PNG LOGO 1.png" class="custom-logo" alt="">
+                        </a>
+                        <div class="site-branding-text">
+                            <h1 class="site-title">
+                                <a href="#" rel="home"></a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 cart-mob">
+                        <img src="assets/img/PNG ICON 1.png" style="width: 50px;display: inline;">
+                        <span class="text" style="display: inline;">Cart</span>
+                    </div>
+
+                    <div class="col-md-5 col-xs-offset-2">
+                        <!-- <div class="col-md-8 serach-bar">
+            <div class="input-group mb-3"> <input type="text" class="form-control input-text" placeholder="Search products...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append"> <button class="btn btn-outline-warning btn-lg" type="button"><i class="fa fa-search"></i></button> </div>
+            </div>
+        </div> -->
+                        <div class="header_search">
+                            <div class="header_search_content">
+                                <div class="header_search_form_container">
+                                    <form name="searchfrm" action="search.php" autocomplete="off" method="GET"
+                                        class="header_search_form clearfix"
+                                        style="display: inline-flex;height: 100%;position: absolute;width:100%;"
+                                        title="">
+                                        <div class="nvleft">
+                                            <select id="catSelect" class="catselect-css" style="width: 141.2px;">
+                                                <option value="0">All Categories</option>
+                                                <option value="1">Fruits & Vegetables</option>
+                                                <option value="2">Meat</option>
+                                                <option value="4">Nadan Fish</option>
+                                                <option value="3">Homely & Handmade Products</option>
+
+                                            </select>
+                                        </div>
+
+                                        <div class="nvfill" style="width: calc(100% - 50px);">
+                                            <input class="header_search_input" type="search"
+                                                style="height: 35px;width:100%;font-weight:lighter;color:#444;"
+                                                id="search-box" name="q" placeholder="Search for products"
+                                                title="Search for products" required="">
+                                            <div id="suggesstion-box"></div>
+                                        </div>
+
+                                        <div class="nvright">
+                                            <button type="submit" class="header_search_button trans_300" value="Submit"
+                                                style="height:  35px"><img class="s-icon" src="assets/img/search.png"
+                                                    alt=""></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--------------------------------------->
+                    <div class="col-md-3 col-sm-2  cart-web" >
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="cart.html">
+                                    <div class="text-center" style="margin: 0 auto; margin-top: 7px;">
+                                        <img src="assets/img/PNG ICON 1.png" style="width: 50px;display: inline;">
+                                        <span class="text" style="display: inline;margin-left: -9px;">Cart</span>
+                                    </div>
+                                </a> 
+                            </div>
+                            <div class="col-md-8">
+                                <div class="dropdown" style="margin-top: 10px;">
+                                    <button class="btn btn-secondary dropdown-toggle user-btn" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        User
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="userprofile.html">Profile</a></li>
+                                        <li><a class="dropdown-item" href="order.html">Orders</a></li>
+                                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .end of site-branding -->
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-theme navbar-web shift">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="productlisting.html">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="productlisting.html">Vegetable</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productlisting.html">Fruits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productlisting.html">Meats</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productlisting.html">Fish</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productlisting.html">Egg</a>
+                            </li>
+                           
+                        </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    <!----Bredsrump-->
+    <div class="container-fluid">
+        <div class="col-sm-12 col-md-12 col-lg-12 content-area  ">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Vegetables</li>
+                </ol>
+            </nav>
+            <hr>
+        </div>
+        <!------------>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+        <div class="content-area" style="padding-top: 0;">
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="card mb-3">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <span class="pull-right">(<strong>5</strong>) items</span>
+                                <h5>Your Orders</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="table-responsive">
+                                    <table class="table shoping-cart-table">
+
+                                        <tbody>
+                                            <tr>
+                                                <td width="15%">
+                                                    <div class="mb-3">
+                                                        <img src="assets/img/kalaji.jpg" width="100px" height="100px" alt="order">
+                                                    </div>
+                                                </td>
+                                                <td class="desc" width="40%">
+                                                    <h5>
+                                                        <a href="product.html">
+                                              Kalanji
+                                          </a>
+                                                    </h5>
+                                                    <p class="small mb-1">
+                                                        Seller : <span class="seller">ABC Ltd</span>
+                                                    </p>
+                                                    <p class="small">
+                                                        Color : <span class="color">Black</span>
+                                                    </p>
+                                                    <dl class="small m-b-none">
+                                                        <dt><status class="delivered"></status> Delivered on Apr 5</dt>
+
+                                                    </dl>
+                                                </td>
+                                                
+                                                <td width="45%">
+                                                   <p><strong>Price:</strong> ₹110,00</p>
+
+                                                    <dl class="small m-b-none mt-5">
+                                                        <dt><a href="#" id="rateing" class="rating-btn" target="_blank">Rating & Review</a></dt>
+
+                                                    </dl>
+                                                </td>
+
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div> 
+                        </div>
+                    </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>Account</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><a href="userprofile.html"><i class="fa fa-user mx-2" aria-hidden="true"></i> Profile</a></li>
+                                <li class="list-group-item"><a href="order.html"><i class="fa fa-cart-plus mx-2" aria-hidden="true"></i> Orders</a></li>
+                                <li class="list-group-item"><a href="cart.html"><i class="fa fa-shopping-cart mx-2" aria-hidden="true"></i> Cart</a></li>
+                                <li class="list-group-item"><a href="login.html"><i class="fa fa-sign-out  mx-2" aria-hidden="true"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </div> 
+                        </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <!-------------------------Footer-->
+    <div class="container-fluid pb-0 mb-0 justify-content-center text-light  foote">
+        <footer>
+            <div class="row my-5 justify-content-center py-5">
+                <div class="col-11">
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                            <h3 class="text-muted mb-md-0 mb-5 bold-text">Askmee.</h3>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                            <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                            <ul class="list-unstyled">
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Blog</li>
+                                <li>Portfolio</li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                            <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                            <p class="mb-1">605, RATAN ICON BUILDING</p>
+                            <p>SEAWOODS SECTOR</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                            <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i
+                                        class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i
+                                        class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span>                                </p><small class="rights"><span>&#174;</span> Askmee All Rights
+                                Reserved.</small>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                            <h6 class="mt-55 mt-2 text-muted bold-text"><b>ANIRUDH SINGLA</b></h6><small> <span><i
+                                        class="fa fa-envelope" aria-hidden="true"></i></span>
+                                ajayreavennder@gmail.com</small>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                            <h6 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h6><small><span><i
+                                        class="fa fa-envelope" aria-hidden="true"></i></span>
+                                akhilbabu868@gmail.com</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/searchbar.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+    <script src="assets/js/searchbar.js"></script>
+
+
+
+
+
+</body>
+
+</html>
